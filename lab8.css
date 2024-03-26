@@ -1,0 +1,52 @@
+/* body styling */
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+}
+
+input[type="button"], input[type="reset"] {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect */
+input[type="button"]:hover, input[type="reset"]:hover {
+    background-color: greenyellow;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+/* High contrast  */
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+input.high-contrast, select.high-contrast, textarea.high-contrast,
+input[type="button"].high-contrast, input[type="reset"].high-contrast,
+input[type="radio"].high-contrast, input[type="checkbox"].high-contrast {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+input[type="button"].high-contrast, input[type="reset"].high-contrast {
+    background-color: yellow;
+    color: black;
+}
+
+input[type="button"].high-contrast:hover, input[type="reset"].high-contrast:hover {
+    background-color: lightyellow;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title> document</title>
+    <link rel="stylesheet" type="text/css" href="lab6.css">
+</head>
+<body>
+
+    <form id="myForm">
+
+        <!-- Zoom buttons -->
+        <button type="button" onclick="zoomIn()">Zoom In</button>
+        <button type="button" onclick="zoomOut()">Zoom Out</button>
+        
+        <!-- Resize text -->
+        <button type="button" onclick="resizeText(1)">Increase Text Size</button>
+        <button type="button" onclick="resizeText(-1)">Decrease Text Size</button>
+
+        <!-- High contrast -->
+        <button type="button" onclick="toggleContrast()">Toggle High Contrast Mode</button>
+
+
+        <!-- Username input -->
+        <p><input type="text" id="username" placeholder="Username"></p>
+        <!-- Password input -->
+        <p><input type="password" id="password" placeholder="Password"></p>
+        <p>
+        <!-- buttons for gender selection -->
+            Gender:
+            <input type="radio" name="gender" value="male" id="male"> Male
+            <input type="radio" name="gender" value="female" id="female"> Female
+            <input type="radio" name="gender" value="other" id="other"> Other (Specify in Bio)
+        </p>
+        <p>
+        <!-- Checkboxes for proficiency -->
+            Code Proficiency:
+            <input type="checkbox" id="proficiency1" value="HTML"> HTML
+            <input type="checkbox" id="proficiency2" value="CSS"> CSS
+            <input type="checkbox" id="proficiency3" value="JavaScript"> JavaScript
+        </p>
+        <p>
+        <!-- Dropdown for country -->
+            <select id="country">
+                <option value="">Select Birth Country</option>
+                <option value="USA">United States of America</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">United Kingdom </option>
+                <option value="Other">Other (Specify in Bio) </option>
+            </select>
+        </p>
+        <!-- Text for biography -->
+        <p><textarea id="bio" rows="4" cols="50" placeholder="Bio"></textarea></p>
+
+        <!-- Submit/Clear button -->
+        <p><input type="button" value="Submit" onclick="submitForm()"></p>
+        <p><input type="reset" value="Clear"></p>
+
+    </form>
+    <!-- data clear message -->
+    <p id="feedback"></p>
+    <script src="lab6.js"></script>
+</body>
+</html>
